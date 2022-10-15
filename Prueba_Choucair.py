@@ -10,9 +10,11 @@ from faker import Faker
 
 class Test_suite(unittest.TestCase):
     def setUp(self):
+        # Inicializacion del webdriver
         self.driver = webdriver.Chrome(executable_path=r"C:\dchrome\chromedriver.exe")
 
     def test_MainPage(self):
+        #Busqueda efectiva de la pagina en google
         driver = self.driver
         driver.get("http://google.com")
         buscador=driver.find_element_by_name("q")
