@@ -8,6 +8,8 @@ import unittest
 import time
 from faker import Faker
 
+#Inicio de automatizacion
+
 class Test_suite(unittest.TestCase):
     def setUp(self):
         # Inicializacion del webdriver
